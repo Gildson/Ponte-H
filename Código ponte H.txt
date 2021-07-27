@@ -1,7 +1,9 @@
 #include <avr/io.h>
 
 int main(){
+  //Portas de Saídas 6 a 2
   PORTD |= 0b01111100;
+  //Porta de entrada 7
   PORTD &= 0b01111111;
   
   while(1){
